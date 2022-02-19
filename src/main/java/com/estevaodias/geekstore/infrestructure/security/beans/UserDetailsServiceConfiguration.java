@@ -1,2 +1,17 @@
-package com.estevaodias.geekstore.infrestructure.security.beans;public class UserDetailsServiceConfiguration {
+package com.estevaodias.geekstore.infrestructure.security.beans;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import static java.util.Collections.emptyList;
+
+@Configuration
+class UserDetailsServiceConfiguration {
+
+  @Bean
+  public UserDetailsService userDetailsService() {
+    return username -> new User("", "", emptyList());
+  }
 }

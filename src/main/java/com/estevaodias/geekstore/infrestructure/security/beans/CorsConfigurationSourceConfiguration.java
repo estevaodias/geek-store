@@ -1,2 +1,18 @@
-package com.estevaodias.geekstore.infrestructure.security.beans;public class CorsConfigurationSourceConfiguration {
+package com.estevaodias.geekstore.infrestructure.security.beans;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+@Configuration
+class CorsConfigurationSourceConfiguration {
+
+  @Bean
+  public CorsConfigurationSource configurationSource() {
+    final var urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
+    urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", new CorsConfiguration().applyPermitDefaultValues());
+    return urlBasedCorsConfigurationSource;
+  }
 }
