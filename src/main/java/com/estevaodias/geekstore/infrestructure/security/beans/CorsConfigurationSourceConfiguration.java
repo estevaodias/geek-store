@@ -9,6 +9,11 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 @Configuration
 class CorsConfigurationSourceConfiguration {
 
+  /**
+   * FIXME remove /** when any origin becomes known
+   *
+   * @return {@link CorsConfigurationSource}
+   */
   @Bean
   public CorsConfigurationSource configurationSource() {
     final var urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
