@@ -11,12 +11,12 @@ import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
 
 @EnableWebSecurity
-class WebSecurityConfigurerAdapterImpl extends WebSecurityConfigurerAdapter {
+class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
   private final PasswordEncoder passwordEncoder;
   private final UserDetailsService userDetailsService;
 
-  protected WebSecurityConfigurerAdapterImpl(final PasswordEncoder passwordEncoder, final UserDetailsService userDetailsService) {
+  protected WebSecurityConfiguration(final PasswordEncoder passwordEncoder, final UserDetailsService userDetailsService) {
     this.passwordEncoder = passwordEncoder;
     this.userDetailsService = userDetailsService;
   }
