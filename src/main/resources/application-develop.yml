@@ -1,8 +1,8 @@
 spring:
-  jpa:
-    open-in-view: false
-    show-sql: true
   datasource:
     password: ${GEEKSTORE_DATABASE_PASSWORD}
     url: ${GEEKSTORE_DATABASE_URL}
     username: ${GEEKSTORE_DATABASE_USERNAME}
+  jpa:
+    open-in-view: false
+    show-sql: true
