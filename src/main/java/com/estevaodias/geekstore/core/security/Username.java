@@ -10,7 +10,7 @@ public class Username {
     this.value = value;
   }
 
-  public String getValue() {
+  public String natural() {
     return value;
   }
 
