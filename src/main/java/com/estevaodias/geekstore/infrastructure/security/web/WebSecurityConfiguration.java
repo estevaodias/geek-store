@@ -1,4 +1,4 @@
-package com.estevaodias.geekstore.infrestructure.security.web;
+package com.estevaodias.geekstore.infrastructure.security.web;
 
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

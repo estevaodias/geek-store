@@ -1,4 +1,4 @@
-package com.estevaodias.geekstore.infrestructure.security.beans;
+package com.estevaodias.geekstore.infrastructure.security.beans;
 
 import org.hashids.Hashids;
 import org.springframework.context.annotation.Bean;

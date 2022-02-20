@@ -1,4 +1,4 @@
-package com.estevaodias.geekstore.infrestructure.security.beans;
+package com.estevaodias.geekstore.infrastructure.security.beans;
 
 import com.github.javafaker.Faker;
 import org.springframework.context.annotation.Bean;

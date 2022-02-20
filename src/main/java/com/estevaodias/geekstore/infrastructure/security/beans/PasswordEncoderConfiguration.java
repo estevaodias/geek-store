@@ -1,4 +1,4 @@
-package com.estevaodias.geekstore.infrestructure.security.beans;
+package com.estevaodias.geekstore.infrastructure.security.beans;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
