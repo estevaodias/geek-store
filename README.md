@@ -6,7 +6,7 @@
 
 Currently, I'm using [gitmoji](https://gitmoji.dev/) for commit messages and the default Intellij IDEA code style with two spaces instead of four.
 
-I haven't any contribution guide, but feel free to submit a pull request if you want to.
+I don't have any contribution guide, but feel free to submit a pull request if you want to.
 
 ## License
 
