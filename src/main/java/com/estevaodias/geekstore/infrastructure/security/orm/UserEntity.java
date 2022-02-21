@@ -2,6 +2,7 @@ package com.estevaodias.geekstore.infrastructure.security.orm;
 
 import lombok.*;
 import org.hibernate.Hibernate;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -20,6 +21,7 @@ class UserEntity {
 
   @Id
   @GeneratedValue
+  @Type(type = "char-uuid")
   @Column(length = 36, nullable = false, unique = true, updatable = false)
   private UUID id;
 
