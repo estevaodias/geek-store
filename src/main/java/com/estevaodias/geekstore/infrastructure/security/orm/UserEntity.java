@@ -16,7 +16,7 @@ import java.util.UUID;
     @Index(columnList = "username", name = "UX_USERS_USERNAME", unique = true),
 })
 @ToString
-public class UserEntity {
+class UserEntity {
 
   @Id
   @GeneratedValue
