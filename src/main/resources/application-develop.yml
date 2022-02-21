@@ -4,5 +4,7 @@ spring:
     url: ${GEEKSTORE_DATABASE_URL}
     username: ${GEEKSTORE_DATABASE_USERNAME}
   jpa:
+    hibernate:
+      ddl-auto: create-drop
     open-in-view: false
     show-sql: true
