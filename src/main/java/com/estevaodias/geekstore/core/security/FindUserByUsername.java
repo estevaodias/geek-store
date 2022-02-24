@@ -1,6 +1,8 @@
 package com.estevaodias.geekstore.core.security;
 
+import java.util.Optional;
+
 public interface FindUserByUsername {
 
-  User findBy(Username username);
+  Optional<User> findBy(Username username);
 }
